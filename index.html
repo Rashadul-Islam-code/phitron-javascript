@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocktail DB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="search-box">
+        <input
+        type="email"
+        class="search-input"
+        id="drink-input"
+        placeholder="Search Your Drink..."
+      />
+      <button onclick="drinkSearch()" type="button" class="search-button">
+        Search
+      </button>
+    </div>
+
+    <section class="content">
+        <div id="drinks-container" class="drinks-container"></div>
+        <div class="cart-container">
+          <h3>
+            Total Cart : <span id="total-cart">0</span>
+          </h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Serial:</th>
+                <th>Image:</th>
+                <th>Name:</th>
+              </tr>
+            </thead>
+            <tbody id="cart-container"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <div class="modal" id="exampleModal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 id="modal-title"></h5>
+            <button
+              type="button"
+              class="close-button "
+              onclick="closeModal()"
+            >
+              &times;
+            </button>
+          </div>
+          <div id="modal-info" class="modal-body"></div>
+        </div>
+      </div>
+    
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
