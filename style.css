@@ -1,5 +1,4 @@
 
-/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -11,7 +10,7 @@ body {
     padding: 20px;
   }
   
-  /* Search Bar */
+  /* Search Bar Related Styles*/
   .search-box {
     display: flex;
     justify-content: center;
@@ -42,7 +41,7 @@ body {
     background-color: #218838;
   }
   
-  /* Content Section */
+  /* Content Section Related Styles */
   .content {
     display: flex;
     gap: 20px;
@@ -86,7 +85,7 @@ body {
     background-color: #f4f4f4;
   }
   
-  /* Modal */
+  /* Modal Related Styles */
   .modal {
     position: fixed;
     top: 0;
@@ -134,24 +133,21 @@ body {
   }
 
 
-  /* ___________________________________________________________ */
 
- 
-  
-  /* Image Styling */
+
+
 #drinks-container img {
-    width: 100%;            /* Make the image take up the full width of its container */
-    height: auto;           /* Maintain aspect ratio */
-    max-height: 350px;      /* Set a maximum height for consistent sizing */
-    object-fit: cover;      /* Ensure the image covers the area without distortion */
-    border-radius: 0.25rem; /* Optional: rounded corners for images */
+    width: 100%;            
+    height: auto;          
+    max-height: 350px;     
+    object-fit: cover;     
+    border-radius: 0.25rem; 
   }
   
 
 
-  /* shared styles */
   .button-c {
-    background-color: #04AA6D; /* Green */
+    background-color: #04AA6D; 
     border: none;
     color: white;
     padding: 15px 32px;
@@ -166,3 +162,6 @@ body {
     background-color: tomato;
   }
   
+  .not-found{
+    text-align: center;
+  }

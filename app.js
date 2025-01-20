@@ -50,7 +50,7 @@ const loadDrinks = (name) => {
         drinksContainer.appendChild(div);
       });
     } else {
-      drinksContainer.innerHTML = `<h1 class="fs-2 d-flex justify-content-center align-items-center">Sorry! No Drinks found!!!</h1>`;
+      drinksContainer.innerHTML = `<h1 class="not-found">Sorry, No Drinks found!!!</h1>`;
     }
   };
   const countOrder = document.getElementById("total-cart").innerText;
@@ -84,8 +84,8 @@ const loadDrinks = (name) => {
     modalInfo.innerHTML = `
         <img class="img-fluid" src="${data.strDrinkThumb}" alt="Image">
         <h4>Details:</h4>
-        <h5 class="mt-2">Category: ${data.strCategory}</h5>
-        <h5 class="mt-2">Alcoholic: ${data.strAlcoholic}</h5>
-        <p class="mt-2">${data.strInstructions}</p>
+        <h5 class="">Category: ${data.strCategory}</h5>
+        <h5 class="">Alcoholic: ${data.strAlcoholic}</h5>
+        <p class="">${data.strInstructions}</p>
     `;
   };
